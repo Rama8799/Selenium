@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 02 10:40:17 IST 2021</td>
+<td>Started on:</td><td>Tue Mar 02 14:16:17 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>63 seconds (63538 ms)</td>
+<tr><td>Total time:</td><td>63 seconds (63848 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -126,13 +126,13 @@ Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
 	... 31 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:9826 after 60000 ms
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:11379 after 60000 ms
 	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
 	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2063)
 	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
 	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
 	... 42 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:9826 after 60000 ms
+Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:11379 after 60000 ms
 	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
 	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
 	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
@@ -140,8 +140,8 @@ Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/1
 	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1968196847", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1968196847'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+</pre></div><a href='#' onClick='toggleBox("stack-trace1787987889", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1787987889'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;
 System info: host: &apos;DESKTOP-IG0O3FD&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: driver.version: ChromeDriver
@@ -191,13 +191,13 @@ Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
 	... 31 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:9826 after 60000 ms
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:11379 after 60000 ms
 	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
 	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2063)
 	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
 	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
 	... 42 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:9826 after 60000 ms
+Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:11379 after 60000 ms
 	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
 	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
 	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
@@ -219,7 +219,7 @@ Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/1
 <tr>
 <td title='first_maven.first_maven.terminate()'><b>terminate</b><br>Test class: first_maven.first_maven</td>
 <td></td>
-<td>-1614661881</td>
+<td>-1614674841</td>
 <td>first_maven.first_maven@193f604a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -281,13 +281,13 @@ Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
 	... 31 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:9826 after 60000 ms
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:11379 after 60000 ms
 	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
 	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2063)
 	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
 	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
 	... 42 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:9826 after 60000 ms
+Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:11379 after 60000 ms
 	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
 	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
 	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
@@ -295,8 +295,8 @@ Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/1
 	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-</pre></div><a href='#' onClick='toggleBox("stack-trace528877978", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace528877978'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+</pre></div><a href='#' onClick='toggleBox("stack-trace1392570698", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1392570698'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;
 System info: host: &apos;DESKTOP-IG0O3FD&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: driver.version: ChromeDriver
@@ -346,13 +346,13 @@ Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
 	... 31 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:9826 after 60000 ms
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:11379 after 60000 ms
 	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
 	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2063)
 	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
 	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
 	... 42 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:9826 after 60000 ms
+Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:11379 after 60000 ms
 	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
 	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
 	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)

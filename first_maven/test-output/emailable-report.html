@@ -9,9 +9,9 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">63,538</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">63,848</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">first_maven.first_maven</td><td><a href="#m0">launch</a></td><td rowspan="1">1614661817908</td><td rowspan="1">63440</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">first_maven.first_maven</td><td><a href="#m1">terminate</a></td><td rowspan="1">1614661881434</td><td rowspan="1">-1614661881434</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">first_maven.first_maven</td><td><a href="#m2">login</a></td><td rowspan="1">1614661881421</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">first_maven.first_maven</td><td><a href="#m0">launch</a></td><td rowspan="1">1614674777509</td><td rowspan="1">63759</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">first_maven.first_maven</td><td><a href="#m1">terminate</a></td><td rowspan="1">1614674841344</td><td rowspan="1">-1614674841344</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">first_maven.first_maven</td><td><a href="#m2">login</a></td><td rowspan="1">1614674841331</td><td rowspan="1">0</td></tr></tbody>
 </table>
 <h2>Default test</h2><h3 id="m0">first_maven.first_maven#launch</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;
@@ -63,13 +63,13 @@ Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
 	... 31 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:9826 after 60000 ms
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:11379 after 60000 ms
 	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
 	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2063)
 	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
 	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
 	... 42 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:9826 after 60000 ms
+Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:11379 after 60000 ms
 	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
 	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
 	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
@@ -129,13 +129,13 @@ Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
 	... 31 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:9826 after 60000 ms
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:11379 after 60000 ms
 	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
 	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2063)
 	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
 	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
 	... 42 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:9826 after 60000 ms
+Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:11379 after 60000 ms
 	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
 	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
 	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)

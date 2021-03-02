@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-02T10:40:17 IST" name="Default suite" finished-at="2021-03-02T10:41:21 IST" duration-ms="63538">
+  <suite started-at="2021-03-02T14:16:17 IST" name="Default suite" finished-at="2021-03-02T14:17:21 IST" duration-ms="63848">
     <groups>
     </groups>
-    <test started-at="2021-03-02T10:40:17 IST" name="Default test" finished-at="2021-03-02T10:41:21 IST" duration-ms="63538">
+    <test started-at="2021-03-02T14:16:17 IST" name="Default test" finished-at="2021-03-02T14:17:21 IST" duration-ms="63848">
       <class name="first_maven.first_maven">
-        <test-method is-config="true" signature="launch()[pri:0, instance:first_maven.first_maven@193f604a]" started-at="2021-03-02T10:40:17 IST" name="launch" finished-at="2021-03-02T10:41:21 IST" duration-ms="63440" status="FAIL">
+        <test-method is-config="true" signature="launch()[pri:0, instance:first_maven.first_maven@193f604a]" started-at="2021-03-02T14:16:17 IST" name="launch" finished-at="2021-03-02T14:17:21 IST" duration-ms="63759" status="FAIL">
           <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -66,13 +66,13 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
 ... 31 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:9826 after 60000 ms
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:11379 after 60000 ms
 at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
 at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2063)
 at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
 at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
 ... 42 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:9826 after 60000 ms
+Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:11379 after 60000 ms
 at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
 at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
 at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
@@ -86,7 +86,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="login()[pri:0, instance:first_maven.first_maven@193f604a]" started-at="2021-03-02T10:41:21 IST" name="login" finished-at="2021-03-02T10:41:21 IST" duration-ms="0" status="SKIP">
+        <test-method signature="login()[pri:0, instance:first_maven.first_maven@193f604a]" started-at="2021-03-02T14:17:21 IST" name="login" finished-at="2021-03-02T14:17:21 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -145,13 +145,13 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
 ... 31 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:9826 after 60000 ms
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:11379 after 60000 ms
 at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
 at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2063)
 at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
 at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
 ... 42 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:9826 after 60000 ms
+Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:11379 after 60000 ms
 at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
 at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
 at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
@@ -165,7 +165,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:first_maven.first_maven@193f604a]" started-at="2021-03-02T10:41:21 IST" name="terminate" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1614661881434" status="SKIP">
+        <test-method is-config="true" signature="terminate()[pri:0, instance:first_maven.first_maven@193f604a]" started-at="2021-03-02T14:17:21 IST" name="terminate" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1614674841344" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
