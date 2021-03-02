@@ -51,8 +51,8 @@ public class Steps {
     
     @And("^Enter the gender as \"([^\"]*)\" and click the sign up button$")
     public void enter_the_gender_and_signup(String gender) throws Throwable
-    { 
-    	if(gender.equalsIgnoreCase("Male")) {
+    { String a="Male";
+    	if(gender.contains(a)) {
     		driver.findElement(By.xpath("//label[contains(text(),'Male')]")).click();
     	}
     	else {
