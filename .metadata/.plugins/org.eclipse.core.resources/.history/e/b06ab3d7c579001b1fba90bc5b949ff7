@@ -1,0 +1,32 @@
+package ddt;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ReadExcelFile {
+   XSSFWorkbook work_book;
+   XSSFSheet sheet;
+   public ReadExcelFile(String path) {
+	   try {
+		   File src = new File(path);
+		   FileInputStream fis = new FileInputStream(src);
+		   work_book = new XSSFWorkbook(fis);
+	   }
+	   catch(Exception e) {
+		   System.out.print(e.getMessage());
+	   }
+   }
+   public String getData(int sheet_no,int row_no,int column_no) {
+	   sheet = work_book.getSheetAt(sheet_no);
+	   String data = sheet.getRow(row_no).getCell(column_no).getStringCellValue();
+	   return data;
+   }
+   public int getRowCount(int sheet_no) {
+	   int row=work_book.getSheetAt(sheet_no).getLastRowNum();
+	   return row;
+   }
+   
+}

@@ -1,0 +1,10 @@
+package frames;
+
+public class frame_handle {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

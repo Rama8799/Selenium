@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-01T15:22:55 IST" name="Default suite" finished-at="2021-03-01T15:23:48 IST" duration-ms="52521">
+    <groups>
+    </groups>
+    <test started-at="2021-03-01T15:22:55 IST" name="Default test" finished-at="2021-03-01T15:23:48 IST" duration-ms="52521">
+      <class name="action_robot.action_robot">
+        <test-method signature="setup()[pri:0, instance:action_robot.action_robot@10d68fcd]" started-at="2021-03-01T15:22:55 IST" name="setup" finished-at="2021-03-01T15:23:48 IST" duration-ms="52461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- action_robot.action_robot -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

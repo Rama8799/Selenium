@@ -1,0 +1,72 @@
+package ddt;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class ddt {
+	WebDriver driver;
+	
+	@BeforeTest
+	public void setup() {
+		System.setProperty("webdriver.chrome.driver","C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		driver= new ChromeDriver();
+		driver.get("https://www.facebook.com/r.php");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+	
+	@Test(dataProvider="testdata")
+	public void facebook_login(String f_name,String l_name,String email,String password,int day,String month,int year,String gender) {
+		driver.findElement(By.name("firstname")).sendKeys(f_name);
+		driver.findElement(By.name("lastname")).sendKeys(l_name);
+		driver.findElement(By.name("reg_email__")).sendKeys(email);
+		driver.findElement(By.name("reg_email_confirmation__")).sendKeys(email);
+		driver.findElement(By.name("reg_passwd__")).sendKeys(password);
+		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		new Select(driver.findElement(By.name("birthday_day"))).selectByVisibleText(Integer.toString(day));
+		new Select(driver.findElement(By.name("birthday_month"))).selectByVisibleText(month);
+		new Select(driver.findElement(By.name("birthday_year"))).selectByVisibleText(Integer.toString(year));
+		if(gender.equalsIgnoreCase("Male")) {
+    		driver.findElement(By.xpath("//label[contains(text(),'Male')]")).click();
+    	}
+    	else {
+    		driver.findElement(By.xpath("//label[contains(text(),'Female')]")).click();
+    	}
+		driver.findElement(By.name("websubmit")).click();
+		
+	}
+	
+	@AfterTest
+	public void terminate() throws InterruptedException {
+		Thread.sleep(2000);
+		driver.close();
+	}
+	
+	@DataProvider(name="testdata")
+	public Object[][] testdata(){
+		ReadExcelFile obj = new ReadExcelFile("F:\\Data.xlsx");
+		int rows = obj.getRowCount(0);
+		System.out.println("Rows:"+rows);
+		Object[][] data = new Object[rows][8];
+		for(int i=0;i<rows;i++) {
+			data[i][0]=obj.getData(0, i, 0);
+			data[i][1]=obj.getData(0, i, 1);
+			data[i][2]=obj.getData(0, i, 2);
+			data[i][3]=obj.getData(0, i, 3);
+			data[i][4]=obj.getData(0, i, 4);
+			data[i][5]=obj.getData(0, i, 5);
+			data[i][6]=obj.getData(0, i, 6);
+			data[i][7]=obj.getData(0, i, 7);
+		}
+		return data;
+	}
+
+}

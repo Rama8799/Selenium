@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "Test Suite">
+<test name = "ChromeTest">
+<parameter name="browser" value="Chrome"/>
+<class name="cross_browser.cross_browser"></class>
+</test>
+<test name = "FireFoxTest">
+<parameter name="browser" value="FireFox"/>
+<class name="cross_browser.cross_browser"></class>
+</test>
+</suite>

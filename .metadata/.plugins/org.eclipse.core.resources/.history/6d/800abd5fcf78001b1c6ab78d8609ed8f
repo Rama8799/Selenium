@@ -1,0 +1,39 @@
+package first;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+//import org.openqa.selenium.WebElement;
+
+public class first_class {
+	private WebDriver driver;
+    @BeforeTest
+    public void launch() {
+    	System.setProperty("webdriver.chrome.driver","C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		driver= new ChromeDriver();
+		driver.get("https://www.facebook.com/r.php");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }
+    @Test
+	public void login() {
+		
+		driver.findElement(By.name("username")).sendKeys("rama_8799");
+		driver.findElement(By.name("password")).sendKeys("Rama1999");
+		driver.findElement(By.xpath("//body[1]/div[1]/section[1]/main[1]/article[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[3]")).click();
+		String s="Instagram";
+		Assert.assertEquals(s, driver.getTitle());
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.findElement(By.cssSelector(".wgVJm")).click();
+	}
+    @AfterTest
+    public void terminate() {
+    	System.out.println("Hello Rama");
+		//driver.quit();
+    }
+}

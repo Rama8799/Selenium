@@ -1,0 +1,43 @@
+#Author: your.email@your.domain.com
+#Keywords Summary :
+#Feature: List of scenarios.
+#Scenario: Business rule through list of steps with arguments.
+#Given: Some precondition step
+#When: Some key actions
+#Then: To observe outcomes or validation
+#And,But: To enumerate more Given,When,Then steps
+#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
+#Examples: Container for s table
+#Background: List of steps run before each of the scenarios
+#""" (Doc Strings)
+#| (Data Tables)
+#@ (Tags/Labels):To group Scenarios
+#<> (placeholder)
+#""
+## (Comments)
+#Sample Feature Definition Template
+@tag
+Feature: Creating an account in facebook
+ # I want to use this template for my feature file
+
+  @tag1
+  Scenario Outline: Filling out the sign up details
+    Given Open the google chrome and launch the facebook sign up page
+    When Enter the "<First_name>" and "<Last_name>"
+    And Enter the <Email_id> and <Password>
+    And Enter the <Birth_day> and <Month> and <Year>
+    And Enter the <Gender> and click the sign up button 
+    Then You are able to create a Facebook account
+ 
+ Examples:
+ | First_name | Last_name   | Email_id           | Password  | Birth_day | Month | Year | Gender |
+ | Rama       | Subramanian | rama.mit@gmail.com | P@ss123   | 8         | 7     | 1999 | Male   |
+ | San        | Joe         | sanjoe12@gmail.com | Pass@123  | 12        | 12    | 1989 | Male   |
+ | Daniel     | Wyatt       | wyatt23@gmail.com  | Pass@@143 | 23        | 10    | 2000 | Female |      
+
+  
+
+    #Examples: 
+    #  | name  | value | status  |
+     # | name1 |     5 | success |
+      #| name2 |     7 | Fail    |
