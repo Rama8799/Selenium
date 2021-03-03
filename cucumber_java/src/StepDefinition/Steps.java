@@ -5,7 +5,6 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import cucumber.api.java.en.And;
@@ -25,14 +24,14 @@ public class Steps {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
-     
+     //First and last name
     @When("^Enter the first name as \"([^\"]*)\" and last name as \"([^\"]*)\"$")					
     public void enter_the_firstname_and_lastname(String f_name , String l_name) throws Throwable 							
     {		
        driver.findElement(By.name("firstname")).sendKeys(f_name);
 	   driver.findElement(By.name("lastname")).sendKeys(l_name);
 	}
-    
+    //Email and password
     @And("^Enter the email as \"(.+)\" and password as \"(.+)\"$")
     public void enter_the_email_and_password(String email , String password) throws Throwable
     {
@@ -40,7 +39,7 @@ public class Steps {
 		driver.findElement(By.name("reg_email_confirmation__")).sendKeys(email);
 		driver.findElement(By.name("reg_passwd__")).sendKeys(password);
     }
-    
+    //Drop down list
     @And("^Enter the birth day as \"([^\"]*)\" and month as \"([^\"]*)\" and year as \"([^\"]*)\"$")
     public void enter_the_birth_day(String day , String month , String year) throws Throwable
     {
@@ -48,7 +47,7 @@ public class Steps {
 		new Select(driver.findElement(By.name("birthday_month"))).selectByVisibleText(month);
 		new Select(driver.findElement(By.name("birthday_year"))).selectByVisibleText(year);
 	}
-    
+    //Radio button
     @And("^Enter the gender as \"([^\"]*)\" and click the sign up button$")
     public void enter_the_gender_and_signup(String gender) throws Throwable
     { 
